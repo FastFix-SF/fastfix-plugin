@@ -3,7 +3,7 @@
 
 **Effective date:** October 15, 2026
 
-These Terms are an agreement between you and FastFix (Fastrackfix Inc., "FastFix," "we," "us") for use of the FastFix dashboard, MCP server, plugin, and related services (the "Service"). By using the Service you agree to these Terms. If you use it for an organization, you confirm you can bind that organization. **Section 13 contains an arbitration agreement and class-action waiver.**
+These Terms are an agreement between you and FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") for use of the FastFix dashboard, MCP server, plugin, and related services (the "Service"). By using the Service you agree to these Terms. If you use it for an organization, you confirm you can bind that organization. **Section 13 contains an arbitration agreement and class-action waiver.**
 
 ## 1. Accounts
 You must be at least 18 and provide accurate information. You are responsible for your account, credentials, and all activity under it.
@@ -59,4 +59,4 @@ To report infringement, send a notice to support@fastfix.ai (subject: "DMCA") wi
 These Terms and the Privacy Policy are the entire agreement. If a provision is unenforceable, the rest remains in effect. Failure to enforce is not a waiver. You may not assign these Terms without our consent; we may assign them in a merger or sale.
 
 ## 16. Contact
-FastFix (Fastrackfix Inc.), San Francisco Bay Area, California, USA — **support@fastfix.ai**
+FastFix (Fastrackfix, Corp.), Oakland, California, USA — **support@fastfix.ai**

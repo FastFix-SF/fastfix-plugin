@@ -3,7 +3,7 @@
 
 **Effective date:** October 15, 2026
 
-This policy explains how FastFix (Fastrackfix Inc., "FastFix," "we," "us") collects, uses, and shares information when you use the FastFix dashboard at https://fastfix-dashboard.vercel.app, the FastFix MCP server, plugin, and related services (the "Service"). Questions: **support@fastfix.ai**.
+This policy explains how FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") collects, uses, and shares information when you use the FastFix dashboard at https://fastfix-dashboard.vercel.app, the FastFix MCP server, plugin, and related services (the "Service"). Questions: **support@fastfix.ai**.
 
 ## 1. Information we collect
 - **Account information:** name, email address, phone number (used for SMS login codes), and login identifiers.
@@ -52,4 +52,4 @@ The Service is not directed to children under 13 (or under 16 in the EEA/UK), an
 We may update this policy. We will post the new version with a new effective date and, for material changes, notify you by email or in the Service.
 
 ## 10. Contact
-FastFix (Fastrackfix Inc.), San Francisco Bay Area, California, USA — **support@fastfix.ai**
+FastFix (Fastrackfix, Corp.), Oakland, California, USA — **support@fastfix.ai**
