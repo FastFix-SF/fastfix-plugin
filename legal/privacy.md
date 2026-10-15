@@ -52,4 +52,4 @@ The Service is not directed to children under 13 (or under 16 in the EEA/UK), an
 We may update this policy. We will post the new version with a new effective date and, for material changes, notify you by email or in the Service.
 
 ## 10. Contact
-FastFix (Fastrackfix, Corp.), Oakland, California, USA — **sebastian@fastfix.ai**
+FastFix (Fastrackfix, Corp.), San Francisco, California, USA — **sebastian@fastfix.ai**

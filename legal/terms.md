@@ -59,4 +59,4 @@ To report infringement, send a notice to sebastian@fastfix.ai (subject: "DMCA") 
 These Terms and the Privacy Policy are the entire agreement. If a provision is unenforceable, the rest remains in effect. Failure to enforce is not a waiver. You may not assign these Terms without our consent; we may assign them in a merger or sale.
 
 ## 16. Contact
-FastFix (Fastrackfix, Corp.), Oakland, California, USA — **sebastian@fastfix.ai**
+FastFix (Fastrackfix, Corp.), San Francisco, California, USA — **sebastian@fastfix.ai**
