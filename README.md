@@ -13,7 +13,8 @@ A hosted MCP server (`fastfix-dashboard`) with tools such as:
 ## Setup
 1. Install the plugin from the Cursor Marketplace.
 2. The first time the agent calls a FastFix tool, Cursor opens the FastFix sign-in (OAuth). Sign in or start your free trial.
-3. Ask your agent, e.g. "What's on my FastFix calendar today?" or "Add a task to renew the domain on Friday."
+3. After install, tell your bot: **set up FastFix.** It runs the bundled `fastfix-setup` skill (connector rules, 4 routines, first run with proof).
+4. Ask your agent, e.g. "What's on my FastFix calendar today?" or "Add a task to renew the domain on Friday."
 
 No API keys are stored in this repo; authentication is OAuth against `https://fastfix-dashboard.vercel.app`.
 

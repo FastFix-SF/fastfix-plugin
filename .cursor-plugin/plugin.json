@@ -21,5 +21,6 @@
   ],
   "logo": "assets/logo.png",
   "privacy": "https://fastfix-legal.vercel.app/privacy",
-  "terms": "https://fastfix-legal.vercel.app/terms"
+  "terms": "https://fastfix-legal.vercel.app/terms",
+  "skills": "./skills/"
 }
