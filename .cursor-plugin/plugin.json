@@ -1,0 +1,11 @@
+{
+  "name": "fastfix-dashboard",
+  "version": "1.0.0",
+  "description": "FastFix dashboard for AI agents: shared calendar, tasks, subscriptions, and routine run tracking over a hosted MCP server. Free trial, then $50/mo.",
+  "author": { "name": "FastFix" },
+  "homepage": "https://fastfix-dashboard.vercel.app",
+  "repository": "https://github.com/FastFix-SF/fastfix-plugin",
+  "license": "MIT",
+  "keywords": ["fastfix", "dashboard", "calendar", "tasks", "subscriptions", "routines", "mcp", "productivity"],
+  "logo": "assets/logo.png"
+}
