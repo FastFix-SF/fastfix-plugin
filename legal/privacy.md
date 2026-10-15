@@ -3,7 +3,7 @@
 
 **Effective date:** October 15, 2026
 
-This policy explains how FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") collects, uses, and shares information when you use the FastFix dashboard at https://fastfix-dashboard.vercel.app, the FastFix MCP server, plugin, and related services (the "Service"). Questions: **support@fastfix.ai**.
+This policy explains how FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") collects, uses, and shares information when you use the FastFix dashboard at https://fastfix-dashboard.vercel.app, the FastFix MCP server, plugin, and related services (the "Service"). Questions: **sebastian@fastfix.ai**.
 
 ## 1. Information we collect
 - **Account information:** name, email address, phone number (used for SMS login codes), and login identifiers.
@@ -35,7 +35,7 @@ We **do not sell or share personal information** for money or for cross-context 
 We may share de-identified or aggregated information that does not identify you.
 
 ## 5. Retention and deletion
-We keep personal information while your account is active and as needed to provide the Service. After you close your account or request deletion, we delete or de-identify your data within 30 days, except where we must keep it for legal, tax, billing, security, or dispute purposes. Backups are overwritten on a rolling basis. To request deletion, email support@fastfix.ai.
+We keep personal information while your account is active and as needed to provide the Service. After you close your account or request deletion, we delete or de-identify your data within 30 days, except where we must keep it for legal, tax, billing, security, or dispute purposes. Backups are overwritten on a rolling basis. To request deletion, email sebastian@fastfix.ai.
 
 ## 6. Security
 We use reasonable administrative, technical, and physical safeguards, including encryption in transit, access controls, and least-privilege access. No method of transmission or storage is 100% secure.
@@ -43,7 +43,7 @@ We use reasonable administrative, technical, and physical safeguards, including 
 ## 7. Your rights
 **California (CCPA/CPRA):** you may request to know/access, correct, and delete your personal information, and to opt out of sale or sharing (we do not sell or share). We do not use sensitive personal information beyond what is permitted to provide the Service, and we will not discriminate against you for exercising your rights. You may use an authorized agent.
 **EEA/UK (GDPR):** you may request access, correction, deletion, restriction, portability, and object to processing, and may complain to your local supervisory authority. Our legal bases are performance of a contract, legitimate interests (security, improvement), consent (e.g., connected accounts, which you can withdraw), and legal obligations. Your data is processed in the United States; where required, we rely on appropriate safeguards such as Standard Contractual Clauses.
-To exercise any right, email support@fastfix.ai. We will verify your request and respond within the time required by law.
+To exercise any right, email sebastian@fastfix.ai. We will verify your request and respond within the time required by law.
 
 ## 8. Children
 The Service is not directed to children under 13 (or under 16 in the EEA/UK), and we do not knowingly collect their personal information. If you believe a child has provided us data, contact us and we will delete it.
@@ -52,4 +52,4 @@ The Service is not directed to children under 13 (or under 16 in the EEA/UK), an
 We may update this policy. We will post the new version with a new effective date and, for material changes, notify you by email or in the Service.
 
 ## 10. Contact
-FastFix (Fastrackfix, Corp.), Oakland, California, USA — **support@fastfix.ai**
+FastFix (Fastrackfix, Corp.), Oakland, California, USA — **sebastian@fastfix.ai**

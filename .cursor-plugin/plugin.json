@@ -4,7 +4,7 @@
   "description": "FastFix dashboard for AI agents: shared calendar, tasks, subscriptions, and routine run tracking over a hosted MCP server. Free trial, then $50/mo.",
   "author": {
     "name": "FastFix (Fastrackfix, Corp.)",
-    "email": "support@fastfix.ai"
+    "email": "sebastian@fastfix.ai"
   },
   "homepage": "https://fastfix-dashboard.vercel.app",
   "repository": "https://github.com/FastFix-SF/fastfix-plugin",

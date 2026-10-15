@@ -10,7 +10,7 @@ You must be at least 18 and provide accurate information. You are responsible fo
 
 ## 2. Free trial, subscription, and payment
 - New accounts get a **14-day free trial**. **Unless you cancel before the trial ends, it converts automatically to a paid subscription** ($50/month unless otherwise stated) charged to your payment method.
-- Subscriptions **renew automatically** each billing period until cancelled. **You can cancel anytime** in the Service or by emailing support@fastfix.ai; cancellation takes effect at the end of the current period.
+- Subscriptions **renew automatically** each billing period until cancelled. **You can cancel anytime** in the Service or by emailing sebastian@fastfix.ai; cancellation takes effect at the end of the current period.
 - Fees are non-refundable, and **there are no refunds or credits for partial periods**, except where required by law.
 - Optional setup and customization services are quoted and billed separately and are non-refundable once work begins.
 - Payments are processed by Stripe. You authorize recurring charges. Fees exclude taxes, which you pay.
@@ -47,16 +47,16 @@ Our [Privacy Policy](https://fastfix-legal.vercel.app/privacy) explains how we h
 These Terms are governed by California law, without regard to conflict-of-law rules. Subject to Section 13, the exclusive venue is the state and federal courts in San Francisco County, California.
 
 ## 13. Arbitration and class-action waiver
-- **Informal resolution first:** contact support@fastfix.ai and try to resolve the dispute for 30 days.
+- **Informal resolution first:** contact sebastian@fastfix.ai and try to resolve the dispute for 30 days.
 - **Binding arbitration:** any unresolved dispute will be resolved by individual binding arbitration administered by JAMS under its applicable rules, seated in San Francisco, California. Either party may bring eligible claims in small-claims court, or seek injunctive relief for IP misuse.
 - **Class-action waiver:** **claims may be brought only individually, not as a plaintiff or class member in any class, consolidated, or representative action.** No jury trial.
-- **30-day opt-out:** you may opt out of this Section 13 by emailing support@fastfix.ai within 30 days of first accepting these Terms, with your name, account email, and a clear statement that you opt out of arbitration.
+- **30-day opt-out:** you may opt out of this Section 13 by emailing sebastian@fastfix.ai within 30 days of first accepting these Terms, with your name, account email, and a clear statement that you opt out of arbitration.
 
 ## 14. Copyright (DMCA)
-To report infringement, send a notice to support@fastfix.ai (subject: "DMCA") with: identification of the work and the infringing material, its location, your contact details, a good-faith statement, a statement under penalty of perjury that the notice is accurate and you are authorized, and your signature. We may remove material and terminate repeat infringers.
+To report infringement, send a notice to sebastian@fastfix.ai (subject: "DMCA") with: identification of the work and the infringing material, its location, your contact details, a good-faith statement, a statement under penalty of perjury that the notice is accurate and you are authorized, and your signature. We may remove material and terminate repeat infringers.
 
 ## 15. General
 These Terms and the Privacy Policy are the entire agreement. If a provision is unenforceable, the rest remains in effect. Failure to enforce is not a waiver. You may not assign these Terms without our consent; we may assign them in a merger or sale.
 
 ## 16. Contact
-FastFix (Fastrackfix, Corp.), Oakland, California, USA — **support@fastfix.ai**
+FastFix (Fastrackfix, Corp.), Oakland, California, USA — **sebastian@fastfix.ai**

@@ -28,4 +28,4 @@ No API keys are stored in this repo; authentication is OAuth against `https://fa
 ## License
 MIT – see [LICENSE](LICENSE).
 
-FastFix is operated by Fastrackfix, Corp., a Delaware corporation (Oakland, California). Contact: support@fastfix.ai
+FastFix is operated by Fastrackfix, Corp., a Delaware corporation (Oakland, California). Contact: sebastian@fastfix.ai
