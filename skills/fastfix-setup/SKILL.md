@@ -8,8 +8,9 @@ Trigger: the user says "set up FastFix" (or the plugin was just installed). Goal
 
 ## 1. Connect the MCP
 - Server name: `fastfix-dashboard`
-- URL (current, from the plugin's mcp.json): `https://fastfix-dashboard.vercel.app/dashboard/mcp`
-- PLACEHOLDER: the URL will move to `https://fastfix.ai/dashboard/mcp`. Update this line (and every install) when it does.
+- URL (primary, also in the plugin's mcp.json): `https://fastfix.ai/dashboard/mcp`
+- Tools list (public, 18 tools): https://fastfix.ai/dashboard/mcp/tools
+- Legacy: existing connections to `https://fastfix-dashboard.vercel.app/dashboard/mcp` still work; every NEW install must use `https://fastfix.ai/dashboard/mcp`.
 - Auth: OAuth on first tool call (owner signs in / starts free trial). No API keys.
 - Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector).
 
@@ -29,9 +30,57 @@ Prompt:
 Prompt:
 "Scan new emails since the last sweep across the owner's connected inboxes. For each real action item, add_task with title, source ("Email from Name <addr>"), source_type=email, source_url, why, area. Skip anything already in list_tasks. No fake or guessed tasks. Up to 2 Gmail reply drafts if clearly needed. End with report_routine_run + one proof image."
 
-### Ask Grok Bot queue — every 3h, 8:17 AM to 8:17 PM (8:17, 11:17, 2:17, 5:17, 8:17)
+### Ask Grok Bot queue — recurring; self-scheduling (about every 15 min while work is queued, about every 5h when empty)
+Source: `docs/bot-routine.md` in FastFix-SF/fastfix-dashboard (verbatim). Needs the FastFix dashboard MCP connector. Nothing calls the bot; it polls.
 Prompt:
-"Call list_tasks(delegated=true). For each task: if it has an owner comment (needs_reply), read list_task_comments and answer. Otherwise update_task(stage working / assignee bot) and do it. Done: attach_proof (image + one-line caption) then complete_task(summary, proof_url). Need the owner (decision, login, payment): add_task_comment with one plain question (hands it back). Never send email or change the calendar without the owner's sí. End with report_routine_run + one proof image."
+```text
+FastFix queue routine. You are connected to my FastFix dashboard (MCP). Work the tasks I hand you.
+
+1. Call list_tasks with delegated=true. That is your queue: open tasks I handed you (status "waiting"
+   or "working") and tasks where I commented after your last reply (needs_reply=true). Read each
+   item's recent_comments; call list_task_comments if you need the whole thread.
+
+2. For each task, one at a time:
+   a. If it is "waiting", call update_task with stage="working" so I see "Grok Bot is on it".
+   b. Do the work with your tools and connectors. Use the title, note, source, why and my comments.
+      If I answered a question of yours, use the answer.
+   c. Finish it in one of two ways:
+      - Done: take a screenshot of the result, call attach_proof (task_id, https image url, and a
+        caption: one plain line saying what it shows; it is the title under the picture), then
+        complete_task (id, one-line summary). Never complete without proof. attach_proof returns a
+        proof_id: fix a wrong caption or screenshot with update_proof, remove a wrong or duplicate one
+        with delete_proof.
+      - You need me (a decision, a login, a payment card, a signature, something only a person can
+        do, or anything you are not sure about): call add_task_comment with one short, plain
+        question or instruction. That hands the task back to me with your note on the card. Do not
+        guess and do not pay, send or sign anything I did not ask for.
+      For a progress update that keeps the task with you, use add_task_comment with needs_you=false.
+   d. If a task has needs_reply but is not assigned to you, I replied to your question: if my answer
+      lets you do it, call update_task with assignee="bot" and do it; otherwise answer with
+      add_task_comment.
+   e. If a routine has needs_reply, I answered "No, fix it" on one of its proofs: my comment says what
+      to fix. Fix it, then attach_proof with a new caption and report_routine_run (or reply with
+      add_task_comment if you need more from me).
+
+3. Cancellations: call list_subscriptions with cancel_requested=true. For each subscription:
+   a. If its cancel_stage is "requested", call update_subscription_status with stage="canceling".
+   b. Cancel it on the company's site or app (use my logins and connectors; if you need me for a
+      login, a code or a phone call, say so in the note and keep the stage "canceling").
+   c. When it is canceled, take a screenshot of the confirmation and call update_subscription_status
+      with stage="canceled", a short note (e.g. "Canceled; access ends Oct 31") and the proof_url.
+   d. Ask for a refund when it is fair: it renewed in the last few days, it went unused since the last
+      charge, it was a trial that charged, or the company's policy offers one. Then call
+      update_subscription_status with stage="refund_asked" and a note saying what you asked for.
+      When the refund arrives, set stage="refunded" with the refund email or statement as proof_url.
+      Never threaten, never pay a fee to cancel without asking me, and skip refunds that are not fair.
+
+4. Schedule the next run:
+   - If anything is still in your queue or in progress (tasks or cancellations), check again in
+     about 15 minutes.
+   - If the queue is empty, check again in about 5 hours.
+
+Keep comments short and specific. Report only what you actually did.
+```
 
 ### Subscriptions triage — Monday 8:55 AM
 Prompt:

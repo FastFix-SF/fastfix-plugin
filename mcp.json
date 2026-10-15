@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "fastfix-dashboard": {
-      "url": "https://fastfix-dashboard.vercel.app/dashboard/mcp"
+      "url": "https://fastfix.ai/dashboard/mcp"
     }
   }
 }
