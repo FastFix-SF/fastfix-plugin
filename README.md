@@ -22,8 +22,8 @@ No API keys are stored in this repo; authentication is OAuth against `https://fa
 - Paid setup clients get premium customization of their dashboard.
 
 ## Links
-- Privacy: https://fastfix.ai/privacy
-- Terms: https://fastfix.ai/terms
+- Privacy: https://fastfix-legal.vercel.app/privacy
+- Terms: https://fastfix-legal.vercel.app/terms
 
 ## License
 MIT – see [LICENSE](LICENSE).
