@@ -1,55 +1,131 @@
-<!-- Not legal advice. Have counsel review before relying on this document. -->
-# FastFix Privacy Policy
+# Privacy Policy
 
-**Effective date:** October 15, 2026
+**Effective date:** October 17, 2026 · **Last updated:** October 17, 2026
 
-This policy explains how FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") collects, uses, and shares information when you use the FastFix dashboard at https://fastfix-dashboard.vercel.app, the FastFix MCP server, plugin, and related services (the "Service"). Questions: **sebastian@fastfix.ai**.
+This policy explains how FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we") handles information across FastFix.ai. **Part A** covers FastFix.ai in general. **Part B** covers the FastFix dashboard ([fastfix.ai/dashboard](https://fastfix.ai/dashboard/)) and the FastFix dashboard connector, which lets AI assistants you choose read and update your dashboard.
 
-## 1. Information we collect
-- **Account information:** name, email address, phone number (used for SMS login codes), and login identifiers.
-- **Connected-account data you authorize:** calendar events, tasks derived from your email, and subscription/billing records from accounts you connect (for example, Google). We access only what is needed for the features you use.
-- **Content you or your AI agents submit:** tasks, events, subscriptions, routine run logs, notes, and attachments.
-- **Payment information:** handled by Stripe. We receive limited details (such as plan, status, and last four card digits), not your full card number.
-- **Usage and device data:** log data, IP address, browser/device type, and how the Service is used.
+## Part A. FastFix.ai in general
 
-## 2. How we use information
-To provide, operate, secure, and support the Service; authenticate you; process payments; send service and billing notices; troubleshoot; prevent abuse; comply with law; and improve the Service using de-identified or aggregated usage data that cannot reasonably identify you.
+### A1. Information We Collect
 
-## 3. Google user data (Limited Use)
-FastFix's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Specifically, we:
-- use Google user data only to provide and improve user-facing features of the Service you requested;
-- do not sell Google user data, or use or transfer it for advertising, credit-worthiness, or lending purposes;
-- do not use Google user data to train generalized AI/ML models;
-- do not allow humans to read Google user data except with your consent, for security or abuse investigations, to comply with law, or when aggregated and anonymized for internal operations;
-- transfer it only as needed to provide the Service, comply with law, or as part of a merger or acquisition with notice to you.
+We collect information you provide directly to us, such as:
 
-You can revoke FastFix's access at any time at https://myaccount.google.com/permissions.
+- Contact information (name, email, phone number)
+- Business information (company name, industry, location)
+- Usage data and preferences
+- Communication records
 
-## 4. How we share information
-We **do not sell or share personal information** for money or for cross-context behavioral advertising. We share information only:
-- with **service providers (subprocessors)** that process it on our behalf under contract: Vercel (hosting), Supabase (database and authentication), Stripe (payments), Twilio (SMS login codes), and AI model providers (to process requests you or your agents make; they may not use your data to train their models where we can contractually require that);
-- with third-party services you choose to connect, at your direction;
-- to comply with law, enforce our Terms, or protect rights, safety, and security;
-- in a merger, acquisition, or sale of assets, subject to this policy.
+### A2. How We Use Your Information
 
-We may share de-identified or aggregated information that does not identify you.
+We use the information we collect to:
 
-## 5. Retention and deletion
-We keep personal information while your account is active and as needed to provide the Service. After you close your account or request deletion, we delete or de-identify your data within 30 days, except where we must keep it for legal, tax, billing, security, or dispute purposes. Backups are overwritten on a rolling basis. To request deletion, email sebastian@fastfix.ai.
+- Provide and improve our services
+- Communicate with you about our services
+- Process transactions and send confirmations
+- Respond to your requests and provide customer support
+- Comply with legal obligations
 
-## 6. Security
-We use reasonable administrative, technical, and physical safeguards, including encryption in transit, access controls, and least-privilege access. No method of transmission or storage is 100% secure.
+### A3. Information Sharing
 
-## 7. Your rights
-**California (CCPA/CPRA):** you may request to know/access, correct, and delete your personal information, and to opt out of sale or sharing (we do not sell or share). We do not use sensitive personal information beyond what is permitted to provide the Service, and we will not discriminate against you for exercising your rights. You may use an authorized agent.
-**EEA/UK (GDPR):** you may request access, correction, deletion, restriction, portability, and object to processing, and may complain to your local supervisory authority. Our legal bases are performance of a contract, legitimate interests (security, improvement), consent (e.g., connected accounts, which you can withdraw), and legal obligations. Your data is processed in the United States; where required, we rely on appropriate safeguards such as Standard Contractual Clauses.
-To exercise any right, email sebastian@fastfix.ai. We will verify your request and respond within the time required by law.
+We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except:
 
-## 8. Children
-The Service is not directed to children under 13 (or under 16 in the EEA/UK), and we do not knowingly collect their personal information. If you believe a child has provided us data, contact us and we will delete it.
+- To trusted service providers who assist us in operating our services
+- When required by law or to protect our rights
+- In connection with a business transfer or acquisition
 
-## 9. Changes
-We may update this policy. We will post the new version with a new effective date and, for material changes, notify you by email or in the Service.
+### A4. Data Security
 
-## 10. Contact
-FastFix (Fastrackfix, Corp.), San Francisco, California, USA — **sebastian@fastfix.ai**
+We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+
+### A5. Your Rights
+
+You have the right to:
+
+- Access and update your personal information
+- Request deletion of your data
+- Opt-out of marketing communications
+- File a complaint with relevant authorities
+
+### A6. Cookies and Tracking
+
+We use cookies and similar technologies to enhance your experience, analyze usage patterns, and improve our services.
+
+### A7. Google User Data (Google Calendar)
+
+When you choose to connect your Google account in FastFix (Settings → Integrations → Connect Google Calendar), we request access to your Google Calendar using the `calendar` and `calendar.events` scopes. We access this data only for the Google account you explicitly connect, and only to synchronize your assigned work:
+
+- Create an event on your calendar when a job is scheduled for you.
+- Update the event when the job is rescheduled or edited.
+- Remove the event when the job is cancelled or you are unassigned.
+- Read your primary calendar's busy times to help schedule around conflicts.
+
+We store only the minimum needed to keep your calendar in sync: OAuth tokens and, per job, the identifier of the calendar event we created (so we can update or delete it). This is retained while your account is connected and is **deleted when you disconnect** (Settings → Integrations → Disconnect) or revoke access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions). We do not use Google Calendar data for advertising, and we do not sell it.
+
+**Limited Use disclosure.** FastFix's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. We only use the data to provide and improve the calendar-sync feature you enabled, do not transfer it except as necessary to provide that feature, do not use it for ads, and allow no humans to read it except with your consent, for security, or as required by law.
+
+## Part B. FastFix dashboard and AI-assistant connector
+
+### B1. What the dashboard and connector are
+
+The FastFix dashboard is a private workspace for a business owner: a to-do list and routines, a schedule, subscriptions and invoices, connectors, and small "dashboard tools" built for you. The connector is a Model Context Protocol (MCP) server at `https://fastfix.ai/dashboard/mcp`. When you connect an AI assistant (for example Claude, ChatGPT, Cursor or Grok Bot), that assistant can read and change your dashboard on your behalf, using only the tools described on the [connector page](https://fastfix.ai/dashboard/connector).
+
+### B2. How AI assistants get access
+
+- You sign in with your phone number and a one-time code, then approve the connection. The assistant receives a FastFix access token, never your password or one-time code.
+- A connection stays active until you disconnect it or we revoke it (B6). An assistant's access token expires 30 days after it is issued and its refresh token 90 days after it is issued. Each refresh replaces both, and a replaced token stops working within 10 minutes. An assistant in regular use stays connected without you signing in again; one unused for 90 days must be reconnected.
+- The assistant can only reach data in your own account. It can't see other FastFix customers' data.
+- The AI assistant you connect is provided by a third party (such as Anthropic, OpenAI, Cursor or xAI) under its own terms and privacy policy. Information the assistant reads from your dashboard is handled by that provider under those terms. FastFix doesn't control how that provider stores or uses it.
+
+### B3. Data we store
+
+| Category | Examples | Why |
+| --- | --- | --- |
+| Account | Phone number, sign-in timestamps, time zone and display settings | To sign you in and show your dashboard |
+| Dashboard content | Tasks, routines, comments, events (title, time, place, meeting link, notes), subscriptions and invoices, connector choices, proof screenshots you or your assistant attach, dashboard tools and their data | The service itself |
+| Connection records | Registered assistant apps (name, redirect address), hashed access and refresh tokens, when a connection was last used | To keep connected assistants working and to let you revoke them |
+| Tool-builder requests | The description you give when asking for a dashboard tool, the generated tool, and usage and cost counters | To build tools and enforce daily and monthly limits |
+| Security and abuse prevention | Short-lived sign-up tickets; rate-limit counters keyed on your phone number and a one-way hash of your IP address | To prevent SMS fraud and brute-force attempts |
+
+We don't ask for payment card details in the dashboard, and the dashboard doesn't use advertising or analytics cookies. It keeps your sign-in session in your browser's local storage.
+
+### B4. Retention
+
+- Dashboard content and account data: kept while your account is active, and deleted when you delete your account, or within 30 days of a deletion request (B6). Database backups kept by our database provider roll off on that provider's schedule.
+- One-time sign-in codes are handled by our SMS provider and expire within minutes. OAuth authorization codes expire after 5 minutes.
+- Connection tokens (stored only as one-way hashes): kept while the connection is active. Replaced tokens are deleted shortly after they are replaced, and a connection's tokens are deleted when you delete your account.
+- Sign-up tickets: 15 minutes. Rate-limit counters: deleted when their window ends (at most 24 hours).
+- Tool-builder usage and cost records: kept while your account is active, to enforce limits and prevent abuse, and deleted with your account.
+- Server logs kept by our hosting provider: kept for the limited period that provider's service allows, then deleted automatically.
+
+### B5. Subprocessors
+
+| Provider | What it does for FastFix | Data involved |
+| --- | --- | --- |
+| Supabase | Database, authentication and file storage | All data in B3 |
+| Vercel | Hosting and content delivery for fastfix.ai | Requests passing through, including IP address and request logs |
+| Twilio | Sending and checking one-time sign-in codes by SMS (Twilio Verify) | Phone number, code delivery status |
+| Anthropic | AI model that builds and edits dashboard tools, and turns notes into bullet points | The text of your tool request, the tool being edited, and the text of notes you ask to turn into bullets |
+
+**FastFix never sells your data or uses it to train AI.** We share it with the providers above only so they can do the work listed.
+
+### B6. Disconnecting and deletion
+
+- **Disconnect an assistant:** remove the FastFix connector in that assistant's settings. You can also contact us to revoke every connection. Revoked tokens stop working immediately.
+- **Access or export:** sign in and open [fastfix.ai/dashboard/account](https://fastfix.ai/dashboard/account) (Settings → Your data and account), then choose *Download my data* for a copy of your dashboard data as a JSON file. You can also email [privacy@fastfix.ai](mailto:privacy@fastfix.ai).
+- **Delete your account and data:** on the same page, type DELETE and confirm. Your account, dashboard content and assistant connections are deleted immediately, and every connected assistant is disconnected. Accounts set up for you by FastFix are deleted on request instead: email [privacy@fastfix.ai](mailto:privacy@fastfix.ai) from your account's contact details, or ask from the phone number on the account, and we delete them within 30 days.
+- Information an AI assistant already read stays with that assistant's provider. Ask that provider to delete it under its own policy.
+
+### B7. Children
+
+The dashboard is for businesses and isn't directed at children under 13, and we don't knowingly collect their information.
+
+### B8. Changes
+
+We'll post changes on this page and update the date above.
+
+## Contact
+
+Privacy questions: [privacy@fastfix.ai](mailto:privacy@fastfix.ai) · Support: [support@fastfix.ai](mailto:support@fastfix.ai)  
+Postal address: FASTRACKFIX, CORP., 729 Jones Street Apt 7, San Francisco, CA 94109, United States
+
+*This is a copy of the policy published at <https://fastfix.ai/privacy>. If the two ever differ, the version at fastfix.ai is the one that applies.*
