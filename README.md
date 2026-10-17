@@ -22,6 +22,7 @@ FastFix is a hosted MCP server. You connect it once and sign in with your phone 
 - `approve_tool`: save it to your dashboard once you've said yes.
 - `rate_tool`: give one of your tools a thumbs up or down. FastFix only counts the layout's shape, anonymously, to improve shared templates. Never your words, numbers or account details.
 - `list_my_tools`: see the tools you've built.
+- `update_tool_data`: your bot saves its latest real data into its own tool once a day (no AI cost, no edit limit). With no real data yet, the tool shows "No data yet" instead of examples.
 
 **Tasks and routines**
 - `list_tasks`, `add_task`, `update_task`, `complete_task`: see, add, change and finish to-dos and ongoing routines.
@@ -39,7 +40,7 @@ FastFix is a hosted MCP server. You connect it once and sign in with your phone 
 **Connectors**
 - `list_connectors`, `install_connector`: see which apps your agents use and add verified ones.
 
-Your agent only sees your own account. Nothing ships to your dashboard without your approval.
+Your agent only sees your own account. New tools and layout changes ship to your dashboard only after you approve them; daily data refreshes go straight to your own tool.
 
 ## Setup
 
