@@ -1,26 +1,26 @@
 {
   "name": "fastfix-dashboard",
-  "version": "1.0.0",
-  "description": "Build your own tools around what you need: describe it, try a clickable preview, save it to your FastFix dashboard. Your bots keep it current. Free trial, then $50/mo.",
+  "displayName": "FastFix",
+  "version": "1.1.0",
+  "description": "Build your own tools around what you actually need. Describe a tool, try a clickable preview, and save it to your FastFix dashboard with your real data. Your agents keep it current, answer questions from your data, and show what every bot and team member is doing. Hosted MCP server with OAuth sign-in; no API keys.",
   "author": {
-    "name": "FastFix (Fastrackfix, Corp.)",
-    "email": "sebastian@fastfix.ai"
+    "name": "FastFix (FASTRACKFIX, CORP.)",
+    "email": "support@fastfix.ai"
   },
   "homepage": "https://fastfix.ai/dashboard/connector",
   "repository": "https://github.com/FastFix-SF/fastfix-plugin",
   "license": "MIT",
   "keywords": [
     "fastfix",
+    "tool-builder",
     "dashboard",
-    "calendar",
+    "custom-tools",
     "tasks",
+    "calendar",
     "subscriptions",
-    "routines",
-    "mcp",
-    "productivity"
+    "agents",
+    "mcp"
   ],
-  "logo": "assets/logo.png",
-  "privacy": "https://fastfix.ai/privacy",
-  "terms": "https://fastfix.ai/terms",
+  "logo": "assets/logo.svg",
   "skills": "./skills/"
 }

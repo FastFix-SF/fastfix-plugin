@@ -1,62 +1,55 @@
-<!-- Not legal advice. Have counsel review before relying on this document. -->
-# FastFix Terms of Service
+# Terms of Service: FastFix dashboard and connector
 
-**Effective date:** October 15, 2026
+**Effective date:** October 17, 2026 · **Last updated:** October 17, 2026
 
-These Terms are an agreement between you and FastFix (Fastrackfix, Corp., a Delaware corporation, "FastFix," "we," "us") for use of the FastFix dashboard, MCP server, plugin, and related services (the "Service"). By using the Service you agree to these Terms. If you use it for an organization, you confirm you can bind that organization. **Section 13 contains an arbitration agreement and class-action waiver.**
+These terms cover the FastFix dashboard at [fastfix.ai/dashboard](https://fastfix.ai/dashboard/) and the FastFix dashboard connector at `https://fastfix.ai/dashboard/mcp` (together, the "Service"), provided by FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we"). They add to our general [Terms & Conditions](https://fastfix.ai/terms-conditions). Where the two conflict for the Service, these terms apply.
 
 ## 1. Accounts
-You must be at least 18 and provide accurate information. You are responsible for your account, credentials, and all activity under it.
 
-## 2. Free trial, subscription, and payment
-- New accounts get a **14-day free trial**. **Unless you cancel before the trial ends, it converts automatically to a paid subscription** ($50/month unless otherwise stated) charged to your payment method.
-- Subscriptions **renew automatically** each billing period until cancelled. **You can cancel anytime** in the Service or by emailing sebastian@fastfix.ai; cancellation takes effect at the end of the current period.
-- Fees are non-refundable, and **there are no refunds or credits for partial periods**, except where required by law.
-- Optional setup and customization services are quoted and billed separately and are non-refundable once work begins.
-- Payments are processed by Stripe. You authorize recurring charges. Fees exclude taxes, which you pay.
-- **We may change prices or these Terms** with at least 30 days' notice by email or in the Service. Changes apply at your next renewal; if you do not agree, cancel before then.
+- You sign in with a phone number you control and a one-time code. Keep that number secure. Anyone who can receive its codes can open your dashboard.
+- Access may be limited to invited numbers, or open to numbers in supported countries. We may refuse, limit or close accounts that are used to abuse the Service, such as SMS fraud or automated sign-ups.
+- You must be able to form a binding contract and use the Service for your business.
 
-## 3. AI agents, connected accounts, and outputs
-The Service is used by AI agents and connects to third-party accounts you authorize. **You are responsible for the actions your agents take, the accounts you connect, and how you use outputs.** AI output can be inaccurate, incomplete, or wrong. Review it before relying on it. FastFix is not responsible for actions taken by agents or automations you configure.
+## 2. Connecting AI assistants
 
-## 4. Acceptable use
-Do not: break the law or infringe others' rights; access data you are not authorized to access; send spam or malware; probe, disrupt, or overload the Service; bypass security or usage limits; reverse engineer the Service except as allowed by law; or resell the Service without our permission.
+- You choose which AI assistants to connect, and you authorize them to read and change your dashboard using the connector's tools. Actions an assistant takes through a connection you approved count as actions on your account.
+- AI assistants can make mistakes. Review what they add or change. Tools that change or remove data are labelled on the [connector page](https://fastfix.ai/dashboard/connector), and many clients ask before using them.
+- Third-party assistants are governed by their own terms. FastFix isn't responsible for their outputs or for how they handle information they read from your dashboard.
+- You can disconnect an assistant at any time. See the [Privacy Policy](https://fastfix.ai/privacy), section B6.
 
-## 5. Suspension and termination
-We may suspend or terminate your access at any time if you breach these Terms, create risk or legal exposure for us or others, or fail to pay. You may stop using the Service at any time. Sections that by their nature should survive termination will survive.
+## 3. Dashboard tools and limits
 
-## 6. Intellectual property
-FastFix and its licensors own the Service, including software, design, and trademarks. **You own your data.** You grant FastFix a worldwide, non-exclusive, royalty-free license to host, process, and use your data as needed to operate, secure, support, and improve the Service, as described in our Privacy Policy. Feedback you give us may be used without obligation to you.
+- The Service can build small private "dashboard tools" from your description, using a fixed FastFix design. Each account can build 3 new tools and make 5 edits per day, within a monthly budget. A global daily limit also applies. When a limit is reached, the request is declined until the limit resets.
+- Sign-in codes and sign-in attempts are rate-limited per phone number and per IP address.
+- We may change these limits to keep the Service reliable and affordable. The dashboard doesn't take payments. Any fees for FastFix services are agreed with you separately.
 
-## 7. Third-party services
-The Service integrates with third-party services (e.g., Google, Stripe, AI model providers). Their terms govern your use of them. We do not control and are not responsible for third-party services, and their availability may change.
+## 4. Your content
 
-## 8. Disclaimer of warranties
-**THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ACCURACY. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.**
+You keep ownership of what you and your assistants put in your dashboard. You give FastFix permission to store and process it only to provide, secure and support the Service, as described in the [Privacy Policy](https://fastfix.ai/privacy). You're responsible for having the right to add any information about other people (for example customer names or addresses).
 
-## 9. Limitation of liability
-**TO THE MAXIMUM EXTENT PERMITTED BY LAW, FASTFIX WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR LOST PROFITS, REVENUE, DATA, OR GOODWILL. FASTFIX'S TOTAL LIABILITY FOR ALL CLAIMS RELATING TO THE SERVICE IS LIMITED TO THE AMOUNT YOU PAID FASTFIX IN THE 12 MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM.**
+## 5. Acceptable use
 
-## 10. Indemnification
-You will defend, indemnify, and hold harmless FastFix and its officers, employees, and agents from claims, losses, and expenses (including reasonable attorneys' fees) arising from your data, your use of the Service, your agents' actions, your connected accounts, or your breach of these Terms or law.
+Don't use the Service to break the law, send spam, interfere with other accounts, probe or overload the Service, get around limits, reverse-engineer access controls, or store information you aren't allowed to process.
 
-## 11. Privacy
-Our [Privacy Policy](https://fastfix-legal.vercel.app/privacy) explains how we handle personal information.
+## 6. Availability and changes
 
-## 12. Governing law and venue
-These Terms are governed by California law, without regard to conflict-of-law rules. Subject to Section 13, the exclusive venue is the state and federal courts in San Francisco County, California.
+The Service is provided "as is" and may change, be interrupted or be discontinued. We'll try to give notice of material changes and will update the date above.
 
-## 13. Arbitration and class-action waiver
-- **Informal resolution first:** contact sebastian@fastfix.ai and try to resolve the dispute for 30 days.
-- **Binding arbitration:** any unresolved dispute will be resolved by individual binding arbitration administered by JAMS under its applicable rules, seated in San Francisco, California. Either party may bring eligible claims in small-claims court, or seek injunctive relief for IP misuse.
-- **Class-action waiver:** **claims may be brought only individually, not as a plaintiff or class member in any class, consolidated, or representative action.** No jury trial.
-- **30-day opt-out:** you may opt out of this Section 13 by emailing sebastian@fastfix.ai within 30 days of first accepting these Terms, with your name, account email, and a clear statement that you opt out of arbitration.
+## 7. Disclaimers and limitation of liability
 
-## 14. Copyright (DMCA)
-To report infringement, send a notice to sebastian@fastfix.ai (subject: "DMCA") with: identification of the work and the infringing material, its location, your contact details, a good-faith statement, a statement under penalty of perjury that the notice is accurate and you are authorized, and your signature. We may remove material and terminate repeat infringers.
+The Service is provided "as is" and "as available", without warranties of any kind, to the extent the law allows. As in our general Terms & Conditions, FastFix isn't liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of the Service, including actions taken by AI assistants you connect to it.
 
-## 15. General
-These Terms and the Privacy Policy are the entire agreement. If a provision is unenforceable, the rest remains in effect. Failure to enforce is not a waiver. You may not assign these Terms without our consent; we may assign them in a merger or sale.
+## 8. Termination
 
-## 16. Contact
-FastFix (Fastrackfix, Corp.), San Francisco, California, USA — **sebastian@fastfix.ai**
+You can stop using the Service and ask for deletion at any time ([Privacy Policy](https://fastfix.ai/privacy) B6). We may suspend or end access for breach of these terms or to protect the Service or other users.
+
+## 9. Governing law and disputes
+
+These terms are governed by the laws of the State of California, without regard to conflict-of-law principles. Any dispute arising from the Service will be resolved through binding arbitration in accordance with California law.
+
+## 10. Contact
+
+Support: [support@fastfix.ai](mailto:support@fastfix.ai) · Privacy: [privacy@fastfix.ai](mailto:privacy@fastfix.ai)  
+Postal address: FASTRACKFIX, CORP., San Francisco, CA, United States
+
+*This is a copy of the policy published at <https://fastfix.ai/terms>. If the two ever differ, the version at fastfix.ai is the one that applies.*

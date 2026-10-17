@@ -2,7 +2,7 @@
 
 **FastFix lets you build your own tools around what you actually need, not what a software company decides you need.**
 
-<img src="assets/logo.png" alt="FastFix logo" width="96" />
+<img src="assets/logo.svg" alt="FastFix logo" width="96" />
 
 Connect FastFix to your AI agent, describe the tool you want, and you get a clickable preview to try. Once you say yes, it's saved to your dashboard with your real data. Change it as often as you like.
 
@@ -72,7 +72,7 @@ Try asking:
 
 ## Pricing
 
-Free trial, then $50/month.
+This plugin is free and open source (MIT). A FastFix account starts with a free trial, then costs $50/month.
 
 ## Support
 
@@ -80,6 +80,6 @@ Free trial, then $50/month.
 
 ## License
 
-MIT. See [LICENSE](LICENSE). This repo holds the plugin manifest, connector config, setup skill and legal pages. The FastFix server itself is hosted and is not part of this repo.
+MIT. See [LICENSE](LICENSE). This repo holds the plugin manifest ([`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json)), connector config ([`mcp.json`](mcp.json)), setup skill and copies of the [privacy policy](legal/privacy.md) and [terms](legal/terms.md). The FastFix server itself is hosted and is not part of this repo.
 
 FastFix is operated by FASTRACKFIX, CORP., a California corporation, San Francisco, CA.
