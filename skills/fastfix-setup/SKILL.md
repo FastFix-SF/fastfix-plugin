@@ -111,6 +111,7 @@ Prompt:
 - [ ] 4 routines created with exact names + schedules + owner time zone.
 - [ ] Each routine run once manually; each logged a report_routine_run with one proof image.
 - [ ] Dashboard shows data: Schedule (events), TODO (tasks + routines), Subscriptions.
+- [ ] Your own dashboard tool shows real data or "No data yet" (no example rows); one daily refresh is scheduled.
 
 ## 7. Build the owner's first tool (optional, at the end of setup)
 FastFix is a tool builder: the owner describes a tool and gets a clickable preview before anything is saved.
@@ -120,3 +121,9 @@ FastFix is a tool builder: the owner describes a tool and gets a clickable previ
 4. Call approve_tool only after the owner says yes to that preview. The tool is then saved to their dashboard with their real data. list_my_tools shows what is already built.
 5. If the owner says they like or dislike a tool, call rate_tool with up or down. Only the layout's shape is counted, anonymously, to improve shared templates. Never their words, numbers or account details.
 Limits: 3 new tools and 5 edits per account per day.
+
+## 8. Keep your own tool real (daily)
+Paste this as a standing rule and schedule ONE daily refresh (around 8 AM owner time):
+"Once a day, refresh your own FastFix dashboard tool with real data from your work (numbers, links, proof, media URLs). Never show example data; if you have no real data yet, show "No data yet" and what you need. Don't poll more than once a day unless the owner asks. Never share personal info (finances, private data) unless the owner says so."
+- Use edit_tool on your own tool (list_my_tools shows it); each refresh counts toward the account's 5-edits-per-day limit, so skip the edit when nothing changed.
+- Replace any EX/EXAMPLE rows with real ones or with "No data yet" + what you need.
