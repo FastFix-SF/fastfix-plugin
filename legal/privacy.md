@@ -126,6 +126,6 @@ We'll post changes on this page and update the date above.
 ## Contact
 
 Privacy questions: [privacy@fastfix.ai](mailto:privacy@fastfix.ai) · Support: [support@fastfix.ai](mailto:support@fastfix.ai)  
-Postal address: FASTRACKFIX, CORP., 729 Jones Street Apt 7, San Francisco, CA 94109, United States
+Postal address: FASTRACKFIX, CORP., 729 Jones Street, San Francisco, CA 94109, United States
 
 *This is a copy of the policy published at <https://fastfix.ai/privacy>. If the two ever differ, the version at fastfix.ai is the one that applies.*

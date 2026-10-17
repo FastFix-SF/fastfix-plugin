@@ -84,4 +84,4 @@ This plugin is free and open source (MIT). A FastFix account starts with a free 
 
 MIT. See [LICENSE](LICENSE). This repo holds the plugin manifest ([`.cursor-plugin/plugin.json`](.cursor-plugin/plugin.json)), connector config ([`mcp.json`](mcp.json)), setup skill and copies of the [privacy policy](legal/privacy.md) and [terms](legal/terms.md). The FastFix server itself is hosted and is not part of this repo.
 
-FastFix is operated by FASTRACKFIX, CORP., a California corporation, 729 Jones Street Apt 7, San Francisco, CA 94109.
+FastFix is operated by FASTRACKFIX, CORP., a California corporation, 729 Jones Street, San Francisco, CA 94109.
