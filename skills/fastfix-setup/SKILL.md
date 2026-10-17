@@ -9,10 +9,10 @@ Trigger: the user says "set up FastFix" (or the plugin was just installed). Goal
 ## 1. Connect the MCP
 - Server name: `fastfix-dashboard`
 - URL (primary, also in the plugin's mcp.json): `https://fastfix.ai/dashboard/mcp`
-- Tools list (public, 23 tools): https://fastfix.ai/dashboard/mcp/tools
+- Tools list (public, 24 tools): https://fastfix.ai/dashboard/mcp/tools
 - Legacy: existing connections to `https://fastfix-dashboard.vercel.app/dashboard/mcp` still work; every NEW install must use `https://fastfix.ai/dashboard/mcp`.
 - Auth: OAuth on first tool call (the owner signs in with a phone number and a one-time code, then approves the connection). No API keys.
-- Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, rate_tool, list_my_tools).
+- Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, rate_tool, list_my_tools, update_tool_data).
 
 ## 2. Connector instructions (paste exactly)
 - Gmail: "Draft only. Never send unless the owner said sí to that exact draft. At most 2 drafts per pass."
@@ -125,5 +125,7 @@ Limits: 3 new tools and 5 edits per account per day.
 ## 8. Keep your own tool real (daily)
 Paste this as a standing rule and schedule ONE daily refresh (around 8 AM owner time):
 "Once a day, refresh your own FastFix dashboard tool with real data from your work (numbers, links, proof, media URLs). Never show example data; if you have no real data yet, show "No data yet" and what you need. Don't poll more than once a day unless the owner asks. Never share personal info (finances, private data) unless the owner says so."
-- Use edit_tool on your own tool (list_my_tools shows it); each refresh counts toward the account's 5-edits-per-day limit, so skip the edit when nothing changed.
-- Replace any EX/EXAMPLE rows with real ones or with "No data yet" + what you need.
+- Save it with update_tool_data(tool_id, data, source): tool_id is your tool's id (list_my_tools, or the bot's tool on the dashboard, e.g. "creditscore"); data is the same JSON spec request_tool tools use (hero, tabs with cards or a table, note); source is your bot's name.
+- No AI cost and no edit limit. Up to 64 KB, one save per tool per hour (once a day is the expected use). Media, recordings and proof are https links, never files.
+- Real data only: a payload tagged "Example" is refused. With nothing real yet, don't save; the tool shows "No data yet" + what you need.
+- edit_tool is for layout changes only (5 per account per day), not for the daily refresh.
