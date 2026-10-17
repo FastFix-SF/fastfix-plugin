@@ -9,10 +9,10 @@ Trigger: the user says "set up FastFix" (or the plugin was just installed). Goal
 ## 1. Connect the MCP
 - Server name: `fastfix-dashboard`
 - URL (primary, also in the plugin's mcp.json): `https://fastfix.ai/dashboard/mcp`
-- Tools list (public, 22 tools): https://fastfix.ai/dashboard/mcp/tools
+- Tools list (public, 23 tools): https://fastfix.ai/dashboard/mcp/tools
 - Legacy: existing connections to `https://fastfix-dashboard.vercel.app/dashboard/mcp` still work; every NEW install must use `https://fastfix.ai/dashboard/mcp`.
 - Auth: OAuth on first tool call (the owner signs in with a phone number and a one-time code, then approves the connection). No API keys.
-- Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, list_my_tools).
+- Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, rate_tool, list_my_tools).
 
 ## 2. Connector instructions (paste exactly)
 - Gmail: "Draft only. Never send unless the owner said sí to that exact draft. At most 2 drafts per pass."
@@ -118,4 +118,5 @@ FastFix is a tool builder: the owner describes a tool and gets a clickable previ
 2. Call request_tool with that description. It returns a clickable HTML preview. Show it to the owner and let them click through it.
 3. If the owner wants changes, call edit_tool with one change at a time.
 4. Call approve_tool only after the owner says yes to that preview. The tool is then saved to their dashboard with their real data. list_my_tools shows what is already built.
+5. If the owner says they like or dislike a tool, call rate_tool with up or down. Only the layout's shape is counted, anonymously, to improve shared templates. Never their words, numbers or account details.
 Limits: 3 new tools and 5 edits per account per day.
