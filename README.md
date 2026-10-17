@@ -20,6 +20,7 @@ FastFix is a hosted MCP server. You connect it once and sign in with your phone 
 - `request_tool`: describe a tool and get a clickable preview first.
 - `edit_tool`: change one part of the preview.
 - `approve_tool`: save it to your dashboard once you've said yes.
+- `rate_tool`: give one of your tools a thumbs up or down. FastFix only counts the layout's shape, anonymously, to improve shared templates. Never your words, numbers or account details.
 - `list_my_tools`: see the tools you've built.
 
 **Tasks and routines**
