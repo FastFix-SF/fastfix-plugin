@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date:** October 17, 2026 · **Last updated:** October 17, 2026
+**Effective date:** October 17, 2026 · **Last updated:** October 22, 2026
 
 This policy explains how FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we") handles information across FastFix.ai. **Part A** covers FastFix.ai in general. **Part B** covers the FastFix dashboard ([fastfix.ai/dashboard](https://fastfix.ai/dashboard/)) and the FastFix dashboard connector, which lets AI assistants you choose read and update your dashboard.
 
@@ -67,14 +67,14 @@ We store only the minimum needed to keep your calendar in sync: OAuth tokens and
 
 ### B1. What the dashboard and connector are
 
-The FastFix dashboard is a private workspace for a business owner: a to-do list and routines, a schedule, subscriptions and invoices, connectors, and small "dashboard tools" built for you. The connector is a Model Context Protocol (MCP) server at `https://fastfix.ai/dashboard/mcp`. When you connect an AI assistant (for example Claude, ChatGPT, Cursor or Grok Bot), that assistant can read and change your dashboard on your behalf, using only the tools described on the [connector page](https://fastfix.ai/dashboard/connector).
+The FastFix dashboard is a private workspace for a business owner: a to-do list and routines, a schedule, subscriptions and invoices, connectors, and small "dashboard tools" built for you. The connector is a Model Context Protocol (MCP) server at `https://fastfix.ai/dashboard/mcp`. When you connect an AI assistant (for example Claude, ChatGPT, Cursor, Grok Bot, or Meta (Muse)), that assistant can read and change your dashboard on your behalf, using only the tools described on the [connector page](https://fastfix.ai/dashboard/connector).
 
 ### B2. How AI assistants get access
 
 - You sign in with your phone number and a one-time code, then approve the connection. The assistant receives a FastFix access token, never your password or one-time code.
 - A connection stays active until you disconnect it or we revoke it (B6). An assistant's access token expires 30 days after it is issued and its refresh token 90 days after it is issued. Each refresh replaces both, and a replaced token stops working within 10 minutes. An assistant in regular use stays connected without you signing in again; one unused for 90 days must be reconnected.
 - The assistant can only reach data in your own account. It can't see other FastFix customers' data.
-- The AI assistant you connect is provided by a third party (such as Anthropic, OpenAI, Cursor or xAI) under its own terms and privacy policy. Information the assistant reads from your dashboard is handled by that provider under those terms. FastFix doesn't control how that provider stores or uses it.
+- The AI assistant you connect is provided by a third party (such as Anthropic, OpenAI, Cursor, xAI, or Meta (Muse)) under its own terms and privacy policy. Information the assistant reads from your dashboard is handled by that provider under those terms. FastFix doesn't control how that provider stores or uses it.
 
 ### B3. Data we store
 
@@ -94,7 +94,7 @@ We don't ask for payment card details in the dashboard, and the dashboard doesn'
 
 - Dashboard content and account data: kept while your account is active, and deleted when you delete your account, or within 30 days of a deletion request (B6). Database backups kept by our database provider roll off on that provider's schedule.
 - One-time sign-in codes are handled by our SMS provider and expire within minutes. OAuth authorization codes expire after 5 minutes.
-- Connection tokens (stored only as one-way hashes): kept while the connection is active. Replaced tokens are deleted shortly after they are replaced, and a connection's tokens are deleted when you delete your account.
+- Connection tokens (stored only as one-way hashes): kept while the connection is active. Replaced tokens are deleted shortly after they are replaced. When you revoke one connection, the records for that connection are deleted. Your account data stays yours until you delete the account.
 - Sign-up tickets: 15 minutes. Rate-limit counters: deleted when their window ends (at most 24 hours).
 - Tool-builder usage and cost records: kept while your account is active, to enforce limits and prevent abuse, and deleted with your account.
 - Server logs kept by our hosting provider: kept for the limited period that provider's service allows, then deleted automatically.
@@ -112,7 +112,7 @@ We don't ask for payment card details in the dashboard, and the dashboard doesn'
 
 ### B6. Disconnecting and deletion
 
-- **Disconnect an assistant:** remove the FastFix connector in that assistant's settings. You can also contact us to revoke every connection. Revoked tokens stop working immediately.
+- **Disconnect an assistant:** remove the FastFix connector in that assistant's settings. You can also contact us to revoke every connection. Revoked tokens stop working immediately. When you revoke one connection, the records for that connection are deleted. Your account data stays yours until you delete the account.
 - **Access or export:** sign in and open [fastfix.ai/dashboard/account](https://fastfix.ai/dashboard/account) (Settings → Your data and account), then choose *Download my data* for a copy of your dashboard data as a JSON file. You can also email [privacy@fastfix.ai](mailto:privacy@fastfix.ai).
 - **Delete your account and data:** on the same page, type DELETE and confirm. Your account, dashboard content and assistant connections are deleted immediately, and every connected assistant is disconnected. Accounts set up for you by FastFix are deleted on request instead: email [privacy@fastfix.ai](mailto:privacy@fastfix.ai) from your account's contact details, or ask from the phone number on the account, and we delete them within 30 days.
 - Information an AI assistant already read stays with that assistant's provider. Ask that provider to delete it under its own policy.
@@ -124,6 +124,10 @@ The dashboard is for businesses and isn't directed at children under 13, and we 
 ### B8. Changes
 
 We'll post changes on this page and update the date above.
+
+### B9. Security incidents
+
+If FastFix confirms a security incident that affects personal data, we will notify affected users, and the platforms where FastFix is listed, within 48 hours of confirming the incident. Notice to Meta goes to [vendor-incident@meta.com](mailto:vendor-incident@meta.com).
 
 ## Contact
 
