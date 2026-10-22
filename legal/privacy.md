@@ -86,6 +86,8 @@ The FastFix dashboard is a private workspace for a business owner: a to-do list 
 | Tool-builder requests | The description you give when asking for a dashboard tool, the generated tool, and usage and cost counters | To build tools and enforce daily and monthly limits |
 | Security and abuse prevention | Short-lived sign-up tickets; rate-limit counters keyed on your phone number and a one-way hash of your IP address | To prevent SMS fraud and brute-force attempts |
 
+**Anonymous tool layout ratings:** when you approve a dashboard tool or rate it thumbs up or down, FastFix counts that rating against the tool's layout shape only (which kinds of sections and fields it has), never your words, numbers, names, phone number or data, to improve the shared tool templates. The shared counts hold no link to your account, and FastFix never sells this data or uses it to train AI.
+
 We don't ask for payment card details in the dashboard, and the dashboard doesn't use advertising or analytics cookies. It keeps your sign-in session in your browser's local storage.
 
 ### B4. Retention
@@ -126,6 +128,6 @@ We'll post changes on this page and update the date above.
 ## Contact
 
 Privacy questions: [privacy@fastfix.ai](mailto:privacy@fastfix.ai) · Support: [support@fastfix.ai](mailto:support@fastfix.ai)  
-Postal address: FASTRACKFIX, CORP., 729 Jones Street, San Francisco, CA 94109, United States
+Postal address: FASTRACKFIX, CORP., San Francisco, CA · privacy@fastfix.ai
 
 *This is a copy of the policy published at <https://fastfix.ai/privacy>. If the two ever differ, the version at fastfix.ai is the one that applies.*

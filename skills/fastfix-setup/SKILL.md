@@ -1,6 +1,6 @@
 ---
 name: fastfix-setup
-description: Use when the user says "set up FastFix", or right after the FastFix plugin is installed (or to re-check an install). Connects the fastfix-dashboard MCP, applies connector rules, creates the 4 routines, and runs each once with proof.
+description: Use when the user says "set up FastFix", or right after the FastFix plugin is installed (or to re-check an install). Connects the fastfix-dashboard MCP (25 tools, version 1.2.0), applies connector rules, creates the 4 routines, checks setup_status, and runs each routine once with proof.
 ---
 # FastFix dashboard install playbook
 
@@ -9,10 +9,10 @@ Trigger: the user says "set up FastFix" (or the plugin was just installed). Goal
 ## 1. Connect the MCP
 - Server name: `fastfix-dashboard`
 - URL (primary, also in the plugin's mcp.json): `https://fastfix.ai/dashboard/mcp`
-- Tools list (public, 24 tools): https://fastfix.ai/dashboard/mcp/tools
+- Tools list (public, 25 tools, server version 1.2.0): https://fastfix.ai/dashboard/mcp/tools
 - Legacy: existing connections to `https://fastfix-dashboard.vercel.app/dashboard/mcp` still work; every NEW install must use `https://fastfix.ai/dashboard/mcp`.
 - Auth: OAuth on first tool call (the owner signs in with a phone number and a one-time code, then approves the connection). No API keys.
-- Confirm: the connector lists its tools (add_event, list_events, update_event, add_task, update_task, complete_task, list_tasks, add_task_comment, list_task_comments, attach_proof, update_proof, delete_proof, report_routine_run, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, rate_tool, list_my_tools, update_tool_data).
+- Confirm: the connector lists these 25 tools: list_tasks, add_task, update_task, complete_task, report_routine_run, attach_proof, update_proof, delete_proof, add_task_comment, list_task_comments, list_events, add_event, update_event, list_subscriptions, upsert_subscription, update_subscription_status, list_connectors, install_connector, request_tool, edit_tool, approve_tool, rate_tool, list_my_tools, update_tool_data, setup_status.
 
 ## 2. Connector instructions (paste exactly)
 - Gmail: "Draft only. Never send unless the owner said sí to that exact draft. At most 2 drafts per pass."
@@ -105,17 +105,18 @@ Prompt:
 - Run logs: did = what was done with a number; result = the outcome in a few words.
 
 ## 6. Fresh-install verification checklist
-- [ ] Connector connected; tool list shows all dashboard tools.
+- [ ] Connector connected; tool list shows all 25 dashboard tools on server version 1.2.0, including setup_status.
 - [ ] Connector instructions pasted for Gmail, Google Calendar, dashboard.
 - [ ] Test: add_task "Install test: delete me" -> appears on dashboard -> complete_task with proof_url -> shows Proof ✓.
 - [ ] 4 routines created with exact names + schedules + owner time zone.
 - [ ] Each routine run once manually; each logged a report_routine_run with one proof image.
 - [ ] Dashboard shows data: Schedule (events), TODO (tasks + routines), Subscriptions.
-- [ ] Your own dashboard tool shows real data or "No data yet" (no example rows); one daily refresh is scheduled.
+- [ ] setup_status was called with the owner's bot names. Each bot is Reporting, Page ready, or Waiting.
+- [ ] Your own dashboard tool shows real data or "No data yet" (no example rows); one daily refresh is scheduled from the prompt setup_status returns.
 
 ## 7. Build the owner's first tool (optional, at the end of setup)
 FastFix is a tool builder: the owner describes a tool and gets a clickable preview before anything is saved.
-1. Ask the owner what they want to see or track (for example "my open jobs by customer" or "subscriptions by renewal date").
+1. Ask the owner what they want to see or track (for example "subscriptions by renewal date" or "open work by customer"). The same steps work for any kind of business.
 2. Call request_tool with that description. It returns a clickable HTML preview. Show it to the owner and let them click through it.
 3. If the owner wants changes, call edit_tool with one change at a time.
 4. Call approve_tool only after the owner says yes to that preview. The tool is then saved to their dashboard with their real data. list_my_tools shows what is already built.
@@ -123,9 +124,12 @@ FastFix is a tool builder: the owner describes a tool and gets a clickable previ
 Limits: 3 new tools and 5 edits per account per day.
 
 ## 8. Keep your own tool real (daily)
-Paste this as a standing rule and schedule ONE daily refresh (around 8 AM owner time):
-"Once a day, refresh your own FastFix dashboard tool with real data from your work (numbers, links, proof, media URLs). Never show example data; if you have no real data yet, show "No data yet" and what you need. Don't poll more than once a day unless the owner asks. Never share personal info (finances, private data) unless the owner says so."
-- Save it with update_tool_data(tool_id, data, source): tool_id is your tool's id (list_my_tools, or the bot's tool on the dashboard, e.g. "creditscore"); data is the same JSON spec request_tool tools use (hero, tabs with cards or a table, note); source is your bot's name.
-- No AI cost and no edit limit. Up to 64 KB, one save per tool per hour (once a day is the expected use). Media, recordings and proof are https links, never files.
-- Real data only: a payload tagged "Example" is refused. With nothing real yet, don't save; the tool shows "No data yet" + what you need.
+Call setup_status with the owner's bot names before the first save. It reports each bot as Reporting (a real report in the last 36 hours), Page ready (a page, no real report yet), or Waiting (the last report is older, or the bot has no page yet). It also returns page_data (the "No data yet" page for update_tool_data) and the daily routine prompt named "Report to FastFix dashboard". Schedule that prompt once a day (around 8 AM owner time). Use the prompt it returns; do not rewrite it.
+
+Paste this as a standing rule:
+"Once a day, refresh your own FastFix dashboard tool with real data from your work (numbers, links, proof, media URLs). Use exactly three tabs, in order: Doing now, To do, Done. On To do, anything waiting on the owner uses the status text \"Needs your sí\". Every Done card needs proof. Never show example data. If there is no real data yet, save the page_data from setup_status so the tool shows \"No data yet\". Don't poll more than once a day unless the owner asks. Never share personal info (finances, private data) unless the owner says so."
+- Save it with update_tool_data(tool_id, data, source). tool_id is the bot's tool id from list_my_tools. A new bot passes a short id from its name plus title (the bot name); the first save creates the tool, with no model cost. source is the bot's name.
+- data uses the fixed FastFix kit. Every bot tool has exactly three tabs, in this order, one tappable card per item: "Doing now" (what the bot is working on), "To do" (what is still left, including anything waiting on the owner, status text "Needs your sí"), and "Done" (finished results; every Done card needs proof: link, media, embed, or audio). Older saves with other tabs are still shown, mapped into these three by status.
+- No model cost and no edit limit. Up to 64 KB, one save per tool per hour (once a day is the expected use). Pictures, videos, recordings and proof are https links, never files.
+- Real data only: a payload tagged "Example" is refused, and sample rows are refused. With nothing real yet, save the page_data returned by setup_status, or leave the tool alone if that page is already there. Do not invent rows.
 - edit_tool is for layout changes only (5 per account per day), not for the daily refresh.
