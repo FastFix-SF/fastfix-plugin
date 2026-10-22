@@ -81,7 +81,7 @@ claude mcp add --transport http fastfix https://fastfix.ai/dashboard/mcp
 }
 ```
 
-The first time the agent uses a FastFix tool, a sign-in window opens. The owner enters a phone number and the code sent by text. Then say **"set up FastFix"**. The agent runs the bundled [`fastfix-setup`](skills/fastfix-setup/SKILL.md) skill and makes its first update with a proof screenshot.
+The first time the agent uses a FastFix tool, a sign-in window opens. The owner enters a phone number and the code sent by text. Then say **"set up FastFix"**. The agent runs the bundled [`fastfix-setup`](skills/fastfix-setup/SKILL.md) skill: connect with OAuth, call `setup_status`, and show one useful tool. It offers scheduled routines and creates one only after the owner says yes to that routine.
 
 Try asking:
 
@@ -98,7 +98,7 @@ Try asking:
 
 ## Pricing
 
-This plugin is free and open source (MIT). A FastFix account starts with a free trial, then costs $50/month.
+Free for 7 days, then $50/month. Cancel anytime before the trial ends and you won't be charged. Billing is handled by Stripe.
 
 ## Support
 

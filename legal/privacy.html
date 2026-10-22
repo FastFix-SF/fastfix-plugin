@@ -10,7 +10,7 @@ code{background:#f4f4f4;padding:1px 4px;border-radius:3px}
 footer{margin-top:48px;font-size:.9rem;color:#555}
 </style></head><body><main>
 <h1>Privacy Policy</h1>
-<p><strong>Effective date:</strong> October 17, 2026 · <strong>Last updated:</strong> October 17, 2026</p>
+<p><strong>Effective date:</strong> October 17, 2026 · <strong>Last updated:</strong> October 22, 2026</p>
 <p>This policy explains how FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we") handles information across FastFix.ai. <strong>Part A</strong> covers FastFix.ai in general. <strong>Part B</strong> covers the FastFix dashboard (<a href="https://fastfix.ai/dashboard/">fastfix.ai/dashboard</a>) and the FastFix dashboard connector, which lets AI assistants you choose read and update your dashboard.</p>
 <h2>Part A. FastFix.ai in general</h2>
 <h3>A1. Information We Collect</h3>
@@ -61,13 +61,13 @@ footer{margin-top:48px;font-size:.9rem;color:#555}
 <p><strong>Limited Use disclosure.</strong> FastFix's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We only use the data to provide and improve the calendar-sync feature you enabled, do not transfer it except as necessary to provide that feature, do not use it for ads, and allow no humans to read it except with your consent, for security, or as required by law.</p>
 <h2>Part B. FastFix dashboard and AI-assistant connector</h2>
 <h3>B1. What the dashboard and connector are</h3>
-<p>The FastFix dashboard is a private workspace for a business owner: a to-do list and routines, a schedule, subscriptions and invoices, connectors, and small "dashboard tools" built for you. The connector is a Model Context Protocol (MCP) server at <code>https://fastfix.ai/dashboard/mcp</code>. When you connect an AI assistant (for example Claude, ChatGPT, Cursor or Grok Bot), that assistant can read and change your dashboard on your behalf, using only the tools described on the <a href="https://fastfix.ai/dashboard/connector">connector page</a>.</p>
+<p>The FastFix dashboard is a private workspace for a business owner: a to-do list and routines, a schedule, subscriptions and invoices, connectors, and small "dashboard tools" built for you. The connector is a Model Context Protocol (MCP) server at <code>https://fastfix.ai/dashboard/mcp</code>. When you connect an AI assistant (for example Claude, ChatGPT, Cursor, Grok Bot, or Meta (Muse)), that assistant can read and change your dashboard on your behalf, using only the tools described on the <a href="https://fastfix.ai/dashboard/connector">connector page</a>.</p>
 <h3>B2. How AI assistants get access</h3>
 <ul>
 <li>You sign in with your phone number and a one-time code, then approve the connection. The assistant receives a FastFix access token, never your password or one-time code.</li>
 <li>A connection stays active until you disconnect it or we revoke it (B6). An assistant's access token expires 30 days after it is issued and its refresh token 90 days after it is issued. Each refresh replaces both, and a replaced token stops working within 10 minutes. An assistant in regular use stays connected without you signing in again; one unused for 90 days must be reconnected.</li>
 <li>The assistant can only reach data in your own account. It can't see other FastFix customers' data.</li>
-<li>The AI assistant you connect is provided by a third party (such as Anthropic, OpenAI, Cursor or xAI) under its own terms and privacy policy. Information the assistant reads from your dashboard is handled by that provider under those terms. FastFix doesn't control how that provider stores or uses it.</li>
+<li>The AI assistant you connect is provided by a third party (such as Anthropic, OpenAI, Cursor, xAI, or Meta (Muse)) under its own terms and privacy policy. Information the assistant reads from your dashboard is handled by that provider under those terms. FastFix doesn't control how that provider stores or uses it.</li>
 </ul>
 <h3>B3. Data we store</h3>
 <table>
@@ -84,7 +84,7 @@ footer{margin-top:48px;font-size:.9rem;color:#555}
 <ul>
 <li>Dashboard content and account data: kept while your account is active, and deleted when you delete your account, or within 30 days of a deletion request (B6). Database backups kept by our database provider roll off on that provider's schedule.</li>
 <li>One-time sign-in codes are handled by our SMS provider and expire within minutes. OAuth authorization codes expire after 5 minutes.</li>
-<li>Connection tokens (stored only as one-way hashes): kept while the connection is active. Replaced tokens are deleted shortly after they are replaced, and a connection's tokens are deleted when you delete your account.</li>
+<li>Connection tokens (stored only as one-way hashes): kept while the connection is active. Replaced tokens are deleted shortly after they are replaced. When you revoke one connection, the records for that connection are deleted. Your account data stays yours until you delete the account.</li>
 <li>Sign-up tickets: 15 minutes. Rate-limit counters: deleted when their window ends (at most 24 hours).</li>
 <li>Tool-builder usage and cost records: kept while your account is active, to enforce limits and prevent abuse, and deleted with your account.</li>
 <li>Server logs kept by our hosting provider: kept for the limited period that provider's service allows, then deleted automatically.</li>
@@ -100,7 +100,7 @@ footer{margin-top:48px;font-size:.9rem;color:#555}
 <p><strong>FastFix never sells your data or uses it to train AI.</strong> We share it with the providers above only so they can do the work listed.</p>
 <h3>B6. Disconnecting and deletion</h3>
 <ul>
-<li><strong>Disconnect an assistant:</strong> remove the FastFix connector in that assistant's settings. You can also contact us to revoke every connection. Revoked tokens stop working immediately.</li>
+<li><strong>Disconnect an assistant:</strong> remove the FastFix connector in that assistant's settings. You can also contact us to revoke every connection. Revoked tokens stop working immediately. When you revoke one connection, the records for that connection are deleted. Your account data stays yours until you delete the account.</li>
 <li><strong>Access or export:</strong> sign in and open <a href="https://fastfix.ai/dashboard/account">fastfix.ai/dashboard/account</a> (Settings → Your data and account), then choose <em>Download my data</em> for a copy of your dashboard data as a JSON file. You can also email <a href="mailto:privacy@fastfix.ai">privacy@fastfix.ai</a>.</li>
 <li><strong>Delete your account and data:</strong> on the same page, type DELETE and confirm. Your account, dashboard content and assistant connections are deleted immediately, and every connected assistant is disconnected. Accounts set up for you by FastFix are deleted on request instead: email <a href="mailto:privacy@fastfix.ai">privacy@fastfix.ai</a> from your account's contact details, or ask from the phone number on the account, and we delete them within 30 days.</li>
 <li>Information an AI assistant already read stays with that assistant's provider. Ask that provider to delete it under its own policy.</li>
@@ -109,6 +109,8 @@ footer{margin-top:48px;font-size:.9rem;color:#555}
 <p>The dashboard is for businesses and isn't directed at children under 13, and we don't knowingly collect their information.</p>
 <h3>B8. Changes</h3>
 <p>We'll post changes on this page and update the date above.</p>
+<h3>B9. Security incidents</h3>
+<p>If FastFix confirms a security incident that affects personal data, we will notify affected users, and the platforms where FastFix is listed, within 48 hours of confirming the incident. Notice to Meta goes to <a href="mailto:vendor-incident@meta.com">vendor-incident@meta.com</a>.</p>
 <h2>Contact</h2>
 <p>Privacy questions: <a href="mailto:privacy@fastfix.ai">privacy@fastfix.ai</a> · Support: <a href="mailto:support@fastfix.ai">support@fastfix.ai</a><br/>
 Postal address: FASTRACKFIX, CORP., San Francisco, CA · privacy@fastfix.ai</p>
