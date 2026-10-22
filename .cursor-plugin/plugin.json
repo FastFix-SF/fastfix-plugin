@@ -1,8 +1,8 @@
 {
   "name": "fastfix-dashboard",
   "displayName": "FastFix",
-  "version": "1.1.0",
-  "description": "Build your own tools around what you actually need. Describe a tool, try a clickable preview, and save it to your FastFix dashboard with your real data. Your agents keep it current, answer questions from your data, and show what every bot and team member is doing. Hosted MCP server with OAuth sign-in; no API keys.",
+  "version": "1.2.0",
+  "description": "Run your company by saying only yes. Build tools around what the owner actually needs: describe one, try a clickable preview, and save it to the FastFix dashboard with real data. Agents keep it current, answer questions from that data, and show what every bot and team member is doing. Hosted MCP server with OAuth sign-in; no API keys.",
   "author": {
     "name": "FastFix (FASTRACKFIX, CORP.)",
     "email": "support@fastfix.ai"
