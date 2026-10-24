@@ -2,7 +2,7 @@
 
 **Effective date:** October 17, 2026 · **Last updated:** October 22, 2026
 
-This policy explains how FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we") handles information across FastFix.ai. **Part A** covers FastFix.ai in general. **Part B** covers the FastFix dashboard ([fastfix.ai/dashboard](https://fastfix.ai/dashboard/)) and the FastFix dashboard connector, which lets AI assistants you choose read and update your dashboard.
+This policy explains how FasTrackFix, Corp. (doing business as FastFix and fastfix.ai), a Delaware corporation ("FastFix", "we") handles information across FastFix.ai. **Part A** covers FastFix.ai in general. **Part B** covers the FastFix dashboard ([fastfix.ai/dashboard](https://fastfix.ai/dashboard/)) and the FastFix dashboard connector, which lets AI assistants you choose read and update your dashboard.
 
 ## Part A. FastFix.ai in general
 
@@ -132,6 +132,6 @@ If FastFix confirms a security incident that affects personal data, we will noti
 ## Contact
 
 Privacy questions: [privacy@fastfix.ai](mailto:privacy@fastfix.ai) · Support: [support@fastfix.ai](mailto:support@fastfix.ai)  
-Postal address: FASTRACKFIX, CORP., San Francisco, CA · privacy@fastfix.ai
+Postal address: FasTrackFix, Corp., San Francisco, CA · privacy@fastfix.ai
 
 *This is a copy of the policy published at <https://fastfix.ai/privacy>. If the two ever differ, the version at fastfix.ai is the one that applies.*

@@ -17,7 +17,7 @@ Connect the FastFix MCP server.
 
 ## 2. Check status
 
-Call `setup_status`. It is read-only. Show the owner the result: which of their connections are reporting, which have a page ready, and which are waiting.
+Call `setup_status`. It is read-only. Show the owner the result: which of their connections are reporting, which have a page ready, and which are waiting. If it lists open owner prompts, show those too. Do not call `request_owner_prompt` or `resolve_owner_prompt` unless the owner said yes to that exact prompt.
 
 ## 3. Show one useful tool
 

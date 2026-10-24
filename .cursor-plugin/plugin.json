@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "description": "Run your company by saying only yes. Build tools around what the owner actually needs: describe one, try a clickable preview, and save it to the FastFix dashboard with real data. Agents keep it current, answer questions from that data, and show what every bot and team member is doing. Hosted MCP server with OAuth sign-in; no API keys.",
   "author": {
-    "name": "FastFix (FASTRACKFIX, CORP.)",
+    "name": "FastFix (FasTrackFix, Corp.)",
     "email": "support@fastfix.ai"
   },
   "homepage": "https://fastfix.ai/dashboard/connector",

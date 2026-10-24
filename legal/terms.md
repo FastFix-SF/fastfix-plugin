@@ -2,7 +2,7 @@
 
 **Effective date:** October 17, 2026 · **Last updated:** October 22, 2026
 
-These terms cover the FastFix dashboard at [fastfix.ai/dashboard](https://fastfix.ai/dashboard/) and the FastFix dashboard connector at `https://fastfix.ai/dashboard/mcp` (together, the "Service"), provided by FASTRACKFIX, CORP. (doing business as FastFix and fastfix.ai), a California corporation ("FastFix", "we"). They add to our general [Terms & Conditions](https://fastfix.ai/terms-conditions). Where the two conflict for the Service, these terms apply.
+These terms cover the FastFix dashboard at [fastfix.ai/dashboard](https://fastfix.ai/dashboard/) and the FastFix dashboard connector at `https://fastfix.ai/dashboard/mcp` (together, the "Service"), provided by FasTrackFix, Corp. (doing business as FastFix and fastfix.ai), a Delaware corporation ("FastFix", "we"). They add to our general [Terms & Conditions](https://fastfix.ai/terms-conditions). Where the two conflict for the Service, these terms apply.
 
 ## 1. Accounts
 
@@ -59,6 +59,6 @@ These terms are governed by the laws of the State of California, without regard 
 ## 11. Contact
 
 Support: [support@fastfix.ai](mailto:support@fastfix.ai) · Privacy: [privacy@fastfix.ai](mailto:privacy@fastfix.ai)  
-Postal address: FASTRACKFIX, CORP., San Francisco, CA · privacy@fastfix.ai
+Postal address: FasTrackFix, Corp., San Francisco, CA · privacy@fastfix.ai
 
 *This is a copy of the policy published at <https://fastfix.ai/terms>. If the two ever differ, the version at fastfix.ai is the one that applies.*
